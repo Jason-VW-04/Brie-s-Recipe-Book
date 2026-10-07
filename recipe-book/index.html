@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recipe Book</title>
+<meta name="description" content="Our recipe book: every recipe we keep, sorted by meal, season and occasion.">
+<meta name="theme-color" content="#F6F0E2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Recipes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="preload" href="fonts/caslon-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="app" tabindex="-1"></main>
+
+<nav class="nav" id="nav" aria-label="Sections">
+  <a href="#/" data-nav="home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h11.5a2.5 2.5 0 0 1 2.5 2.5v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19"/><path d="M9 8.5h6"/></svg>
+    <span>Recipes</span>
+  </a>
+  <a href="#/add" data-nav="add">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v8M8 12h8"/></svg>
+    <span>Add recipe</span>
+  </a>
+  <a href="#/grocery" data-nav="grocery">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5h16l-1.6 9.2a2 2 0 0 1-2 1.8H7.6a2 2 0 0 1-2-1.8L4 8.5Z"/><path d="M8.5 8.5 11 4M15.5 8.5 13 4"/></svg>
+    <span>Grocery list<i class="dot" id="groceryDot" hidden></i></span>
+  </a>
+  <a href="#/settings" data-nav="settings">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.2V5.5A1.5 1.5 0 0 1 5.500 4h6.7a1.500 1.500 0 0 1 1.060.44l6.300 6.300a1.500 1.500 0 0 1 0 2.120l-6.700 6.700a1.500 1.500 0 0 1-2.120 0l-6.300-6.300A1.500 1.500 0 0 1 4 12.200Z"/><circle cx="8.500" cy="8.500" r="1.300"/></svg>
+    <span>Tags</span>
+  </a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
